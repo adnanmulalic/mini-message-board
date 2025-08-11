@@ -7,8 +7,10 @@
                     <span>User: <%= messages[i].user %></span>
                     <span>Message: <%= messages[i].text %></span>
                     <span>Date: <%= messages[i].added %></span>
+                    <a href= "http://localhost:3000/<%= messages[i].user.toLowerCase() %>/message" >Open message</a>
                 </li>
             <% } %>
         </ul>
+        <a href="http://localhost:3000/new">Add new message</a>
     </body>
 </html>
